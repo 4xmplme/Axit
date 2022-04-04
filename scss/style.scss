@@ -1,0 +1,128 @@
+@import url(../css/nullstyle.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;700&display=swap');
+
+$black: #000000;
+$lightblack: #333333;
+$grey: #9a9a9a;
+$lightgrey: #f5f5f5;
+$white: #ffffff;
+$orange: #ff9b51;
+
+$OpenSans: 'Open Sans', sans-serif;
+$Raleway: 'Raleway', sans-serif;
+
+body {
+	font-family: $OpenSans;
+}
+
+a {
+	color: $white;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 120px 0px;
+}
+
+.title {
+	font-size: 36px;
+	line-height: 43px;
+
+	&::after {
+		content: "";
+		display: block;
+		height: 2px;
+		width: 60px;
+		margin: 30px 0px auto;
+	}
+}
+
+.header {
+	background-color: $black;
+	padding: 20px 0px;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__menu {
+
+		& ul {
+			display: flex;
+
+			& a {
+				margin-left: 50px;
+				color: $grey;
+
+				&:hover {
+					color: $white;
+					transition: 0.5s;
+				}
+			}
+		}
+	}
+}
+
+.welcome {
+	background-color: $grey;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		max-width: 520px;
+		color: $white;
+		font-family: $Raleway;
+		font-weight: 300;
+	}
+
+	&__title::after {
+		background-color: $white;
+		margin: 40px 0px;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 23px;
+	}
+
+	&__form {
+		background-color: $white;
+		max-height: 100%;
+
+		&-label {
+			background-color: $lightgrey;
+		}
+		
+		&-data input{
+			display: block;
+		}
+
+		&-submit input{
+			background-color: $orange;
+		}
+	}
+}
+
+
+
+.footer {
+	color: #ccc;
+	background-color: $black;
+
+	&__content {
+		text-align: center;
+	}
+
+	&__icons a{
+		margin: 0px 15px;
+	}
+}
