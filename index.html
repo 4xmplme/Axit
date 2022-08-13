@@ -5,22 +5,25 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Axit</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="header">
-			<div class="container">
-				<div class="header__content">
-					<div class="header__logo">
-						<a href="#"><img src="img/header/logo.png" alt="logo"></a>
+			<div class="header__content container">
+				<div class="header__logo">
+					<a href="#"><img src="img/header/logo.png" alt="logo"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-icon">
+						<span></span>
 					</div>
-					<nav class="header__menu">
-						<ul>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Reviews</a></li>
-							<li><a href="#">Contact</a></li>
+					<nav class="header__menu-body">
+						<ul class="header__menu-list">
+							<li><a data-goto=".features" class="header__menu-link" href="#">Features</a></li>
+							<li><a data-goto=".our-process" class="header__menu-link" href="#">About</a></li>
+							<li><a data-goto=".pricing" class="header__menu-link" href="#">Pricing</a></li>
+							<li><a data-goto=".testimonials" class="header__menu-link" href="#">Reviews</a></li>
+							<li><a data-goto=".contact" class="header__menu-link" href="#">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -50,9 +53,9 @@
 						<label for="welcome-form">Try Your <span> Free </span> Trial Today</label>
 					</div>
 					<div class="welcome__form-data">
-						<input type="text" placeholder="Name">
-						<input type="email" placeholder="Email">
-						<input type="password" placeholder="Password">
+						<input type="text" placeholder="Name" required>
+						<input type="email" placeholder="Email" required>
+						<input type="password" placeholder="Password" required>
 					</div>
 					<div class="welcome__form-submit">
 						<button>Get Started</button>
@@ -72,44 +75,55 @@
 					</div>
 				</div>
 				<div class="brand-bar__links">
-					<a href="https://www.facebook.com/profile.php?id=100008697765105"><i
-							class="fa-brands fa-facebook-f"></i></a>
+					<a href="https://www.facebook.com/profile.php?id=100008697765105"><i class="fa-brands fa-facebook-f"></i></a>
 					<a href="https://twitter.com/4xmplme"><i class="fa-brands fa-twitter"></i></a>
 					<a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
 					<a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
 					<a href="https://www.instagram.com/4xmplme/"><i class="fa-brands fa-instagram"></i></a>
 					<a href="#"><i class="fa-brands fa-stumbleupon"></i></a>
-					<a href="https://open.spotify.com/user/n91hz0l2js6rpwukpom4zbs1t"><i
-							class="fa-brands fa-spotify"></i></a>
+					<a href="https://open.spotify.com/user/n91hz0l2js6rpwukpom4zbs1t"><i class="fa-brands fa-spotify"></i></a>
 				</div>
 			</div>
 		</section>
 		<section class="features section">
 			<div class="features__inner container">
 				<div class="features__tabs">
-					<div class="features__tabs-item">
-						TAB 1
-					</div>
-					<div class="features__tabs-item">
-						TAB 2
-					</div>
-					<div class="features__tabs-item">
-						TAB 3
-					</div>
 				</div>
 				<div class="features__content">
-					<div class="features__title">
+					<div class="features__title title">
 						Tabs with soft transition effect.
 					</div>
 					<div class="features__text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-						justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-						penatibus et magnis dis parturient montes.
-						<br>
-						<br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-						bibendum laoreet.
+						<div class="features__text-item">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+							bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+							penatibus et magnis dis parturient montes.
+							<br>
+							<br>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+							bibendum laoreet.
+						</div>
+						<div class="features__text-item">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+							bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+							penatibus et magnis dis parturient montes.
+							<br>
+							<br>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+							bibendum laoreet.
+						</div>
+						<div class="features__text-item">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+							bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+							penatibus et magnis dis parturient montes.
+							<br>
+							<br>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+							bibendum laoreet.
+						</div>
 					</div>
 					<div class="features__button download">
 						<a href="#">Download</a>
@@ -123,6 +137,7 @@
 		<section class="sub-list section">
 			<div class="sub-list__inner container">
 				<div class="sub-list__image">
+					<img src="img/sub-list/image_left_sub_list_u260 copy.png">
 				</div>
 				<div class="sub-list__content">
 					<div class="sub-list__title title">
@@ -185,7 +200,7 @@
 					</div>
 				</div>
 				<div class="standart-picture__image">
-
+					<img src="img/sub-list/image_left_sub_list_u260 copy.png">
 				</div>
 			</div>
 		</section>
@@ -253,19 +268,61 @@
 						<div class="pricing__item-title">
 							Basic
 						</div>
-
+						<div class="pricing__item-value">
+							$0
+						</div>
+						<div class="pricing__item-term">
+							Free for Life
+						</div>
+						<div class="pricing__item-properties">
+							<div class="pricing__item-property empty-property"></div>
+							<div class="pricing__item-property">1 GB OF SPACE</div>
+							<div class="pricing__item-property">10 GB OF BANDWIDTH</div>
+							<div class="pricing__item-property">3 WEBSITES</div>
+							<div class="pricing__item-property">BASIC CUSTOMIZATION</div>
+							<div class="pricing__item-property">WORDPRESS INTEGRATION</div>
+							<div class="pricing__item-property">EMAIL SUPPORT</div>
+						</div>
 					</div>
 					<div class="pricing__item">
 						<div class="pricing__item-title">
 							Professional
 						</div>
-
+						<div class="pricing__item-value">
+							$19
+						</div>
+						<div class="pricing__item-term">
+							Monthly Payment
+						</div>
+						<div class="pricing__item-properties">
+							<div class="pricing__item-property">OUR MOST POPULAR</div>
+							<div class="pricing__item-property">5 GB OF SPACE</div>
+							<div class="pricing__item-property">50 GB OF BANDWIDTH</div>
+							<div class="pricing__item-property">12 WEBSITES</div>
+							<div class="pricing__item-property">ADVANCED CUSTOMIZATION</div>
+							<div class="pricing__item-property">WORDPRESS INTEGRATION</div>
+							<div class="pricing__item-property">EMMAIL SUPPORT</div>
+						</div>
 					</div>
 					<div class="pricing__item">
 						<div class="pricing__item-title">
 							Enterprise
 						</div>
-
+						<div class="pricing__item-value">
+							$70
+						</div>
+						<div class="pricing__item-term">
+							Monthly Payment
+						</div>
+						<div class="pricing__item-properties">
+							<div class="pricing__item-property empty-property"></div>
+							<div class="pricing__item-property">UNLIMITED SPACE</div>
+							<div class="pricing__item-property">UNLIMITED BANDWIDTH</div>
+							<div class="pricing__item-property">100 WEBSITES</div>
+							<div class="pricing__item-property">ADVANCED CUSTOMIZATION</div>
+							<div class="pricing__item-property">WORDPRESS INTEGRATION</div>
+							<div class="pricing__item-property">24/7 CUSTOMER SUPPORT</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -358,15 +415,13 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				</div>
 				<form class="contact__form">
-					<div class="contact__form-content">
-						<div class="contact__form-data">
-							<input type="text" placeholder="Name" required>
-							<input type="email" placeholder="Email" required>
-							<input type="text" placeholder="Subject" required>
-						</div>
-						<div class="contact__form-message">
-							<textarea placeholder="Message" required></textarea>
-						</div>
+					<div class="contact__form-data">
+						<input type="text" placeholder="Name" required>
+						<input type="email" placeholder="Email" required>
+						<input type="text" placeholder="Subject" required>
+					</div>
+					<div class="contact__form-message">
+						<textarea placeholder="Message" required></textarea>
 					</div>
 					<div class="contact__form-button">
 						<button>Send Message</button>
@@ -385,8 +440,7 @@
 						<a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
 						<a href="https://www.instagram.com/4xmplme/"><i class="fa-brands fa-instagram"></i></a>
 						<a href="#"><i class="fa-brands fa-stumbleupon"></i></a>
-						<a href="https://open.spotify.com/user/n91hz0l2js6rpwukpom4zbs1t"><i
-								class="fa-brands fa-spotify"></i></a>
+						<a href="https://open.spotify.com/user/n91hz0l2js6rpwukpom4zbs1t"><i class="fa-brands fa-spotify"></i></a>
 					</div>
 					<div class="footer__text">
 						© 2015 Axure Themes
@@ -395,6 +449,8 @@
 			</div>
 		</footer>
 		<script src="https://kit.fontawesome.com/d9c122dd51.js" crossorigin="anonymous"></script>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/slick.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
