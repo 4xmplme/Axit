@@ -567,25 +567,40 @@ a {
 	}
 
 	&__item {
+		align-items: center;
 		max-width: 270px;
+		display: grid;
+		grid-template-columns: 70px 1fr;
+		grid-template-areas:
+			"text text"
+			"image title";
 
 		&-text {
 			margin-bottom: 20px;
 			padding: 25px 10px;
 			background-color: $lightwhite;
+			grid-area: text;
 		}
 
 		&-image {
-			background-color: $grey;
-			border-radius: 50%;
-			height: 70px;
-			width: 70px;
+			grid-area: image;
 		}
 
 		&-title {
 			font-size: 20px;
+			line-height: 20px;
 			font-weight: 700;
-			margin-bottom: 5px;
+			padding-left: 15px;
+			padding-top: 15px;
+			grid-area: title;
+
+
+			& span {
+				display: block;
+				font-size: 14px;
+				font-weight: 400;
+				margin-top: 10px;
+			}
 		}
 	}
 }
@@ -896,6 +911,15 @@ a {
 			align-items: center;
 			gap: 20px;
 		}
+
+		&__item-title {
+			padding-top: 10px;
+			padding-left: 10px;
+
+			& span {
+				margin-top: 10px;
+			}
+		}
 	}
 
 	.contact {
@@ -961,7 +985,12 @@ a {
 
 	.testimonials {
 		&__item-title {
-			margin: 5px 0px;
+			padding-top: 5px;
+			padding-left: 5px;
+
+			& span {
+				margin-top: 5px;
+			}
 		}
 	}
 
